@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NewsWave - Live News App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">News<span>Wave</span></div>
+      <p class="live-badge">● Live Updates</p>
+    </nav>
+
+    <div class="hero-content">
+      <h1>Stay Updated With The Latest Headlines</h1>
+      <p>Explore breaking news, technology, sports, business, health and more from trusted sources.</p>
+
+      <form id="searchForm" class="search-box">
+        <input type="text" id="searchInput" placeholder="Search latest news..." />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </header>
+
+  <section class="category-section">
+    <button data-category="general" class="active">All</button>
+    <button data-category="technology">Technology</button>
+    <button data-category="business">Business</button>
+    <button data-category="sports">Sports</button>
+    <button data-category="health">Health</button>
+    <button data-category="science">Science</button>
+    <button data-category="entertainment">Entertainment</button>
+  </section>
+
+  <section class="status-area">
+    <div id="loader" class="loader hidden"></div>
+    <p id="errorMessage"></p>
+  </section>
+
+  <main id="newsContainer" class="news-container"></main>
+
+  <footer>
+    <p>NewsWave © 2026 | Built using HTML, CSS, JavaScript & NewsAPI</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
